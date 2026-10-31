@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="my">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Buffalo688</title>
+    <meta name="description" content="Welcome from Buffalo688" />
+    <meta name="theme-color" content="#0B2A4A" />
+    <!-- NOTE: no PWA manifest link and no apple-mobile-web-app-capable meta —
+         app-install prompt is intentionally removed from this rebuild. -->
+    <link rel="icon" type="image/webp" href="https://cdn.myanmarshankoeme.com/build/assets/img/bf688/buffalo688.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Roboto:wght@400;500;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- Inline stub of the original site's imageLinkGenerate (/js/original-thumb.js).
+         Kept in-tree so the SPA never 404s on a missing external script. -->
+    <script>
+      (function () {
+        var CDN = "https://cdn.myanmarshankoeme.com/build/assets/img/bf688";
+        var ST = "https://space-tech.sgp1.cdn.digitaloceanspaces.com";
+        window.__BF688_THUMB__ = function (provider, id) {
+          provider = String(provider || "").trim();
+          id = String(id || "").trim();
+          if (!id) return "";
+          if (provider === "Jili") return CDN + "/jili/" + id + ".webp";
+          if (provider === "Spade") return "https://merchantapi.silverkirin88.com/thumbnail/en_US/" + id + ".jpg";
+          if (provider === "Fastspin") return "http://api-egame-staging.fsuat.com/thumbnail/en_US/" + id + ".jpg";
+          if (provider === "Playstar") return "https://yy24gld.sgp1.cdn.digitaloceanspaces.com/playstar/" + id + ".png";
+          if (provider === "FaChai") return CDN + "/fachai/" + id + "_icon_300x500_mm.webp";
+          if (provider === "PGSoft") return ST + "/slot-images/pgsoft/" + id + ".webp";
+          if (provider === "JOKER" || provider === "Joker") return ST + "/slot-images/joker/" + id + ".webp";
+          if (provider === "5G") return "https://yy24gld.sgp1.cdn.digitaloceanspaces.com/5g/" + id + ".png";
+          if (provider === "KA") return ST + "/slot-images/ka/" + id + ".webp";
+          if (provider === "AceWin") return CDN + "/acewin/" + id + "_EN.webp";
+          if (provider === "JDB") return ST + "/slot-images/jdb/" + id + ".webp";
+          if (provider === "Pragmatic" && id === "47") return ST + "/slot-images/jili/JL_400x540_GameID47_en-US.webp";
+          if (provider === "FatPanda") return "https://api-2104.ppgames.net/game_pic/square/138/" + id + ".jpg";
+          if (provider === "2J") return CDN + "/2j/" + id + ".webp";
+          if (provider === "HotDog") return CDN + "/hotdog/" + id + ".webp";
+          return CDN + "/pp/" + id + ".webp";
+        };
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+
+</html>
